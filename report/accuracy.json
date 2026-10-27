@@ -1,0 +1,20 @@
+[
+ {
+  "method": "crm_weighted",
+  "mape": 0.42541035900198776,
+  "bias": -0.42541035900198776,
+  "worst_quarter_error": 0.5546545949509807
+ },
+ {
+  "method": "crm_plus_runrate",
+  "mape": 0.30318236831339296,
+  "bias": -0.30318236831339296,
+  "worst_quarter_error": 0.47167125099529267
+ },
+ {
+  "method": "conversion_model",
+  "mape": 0.08937671244914397,
+  "bias": 0.011844648009059183,
+  "worst_quarter_error": 0.22492761451538146
+ }
+]

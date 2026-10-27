@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pipeline-forecast-cockpit"
+version = "0.1.0"
+description = "Pipeline analytics and a back-tested bookings forecast"
+requires-python = ">=3.11"
+dependencies = ["duckdb>=1.0", "pandas>=2.0", "numpy"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ledgerly-data @ git+https://github.com/jungmarker/ledgerly-data.git"]
+
+[project.scripts]
+cockpit = "cockpit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cockpit = ["sql/*.sql"]
